@@ -1,0 +1,32 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --forceExit",
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon --inspect index.js",
+    "test-debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  }
+}
